@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us | Apex Commercial Realty</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <nav class="navbar scrolled" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">
+        <span class="logo-icon">▲</span>
+        <span class="logo-text">APEX <strong>COMMERCIAL</strong></span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="properties.html">Properties</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <section class="page-hero">
+    <div class="container">
+      <p class="section-eyebrow">Get In Touch</p>
+      <h1>Let's Talk</h1>
+      <p>Reach out to schedule a consultation, request property information, or just ask a question.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info">
+          <h2>How Can We Help?</h2>
+          <p>Our brokers respond to every inquiry within one business hour. Whether you're looking to lease, buy, or sell — we're here.</p>
+
+          <div class="contact-detail">
+            <div class="contact-icon">📍</div>
+            <div>
+              <h4>Office Address</h4>
+              <p>1200 Commerce Blvd, Suite 800<br/>New York, NY 10001</p>
+            </div>
+          </div>
+          <div class="contact-detail">
+            <div class="contact-icon">📞</div>
+            <div>
+              <h4>Phone</h4>
+              <a href="tel:+15551234567">(555) 123-4567</a>
+            </div>
+          </div>
+          <div class="contact-detail">
+            <div class="contact-icon">✉️</div>
+            <div>
+              <h4>Email</h4>
+              <a href="mailto:info@apexcommercial.com">info@apexcommercial.com</a>
+            </div>
+          </div>
+
+          <div class="hours-card">
+            <h4>Business Hours</h4>
+            <div class="hours-row"><span>Monday – Friday</span><span>8:00 AM – 7:00 PM</span></div>
+            <div class="hours-row"><span>Saturday</span><span>9:00 AM – 4:00 PM</span></div>
+            <div class="hours-row"><span>Sunday</span><span>By Appointment</span></div>
+          </div>
+
+          <div style="margin-top:32px;">
+            <h4 style="margin-bottom:16px;">Our Brokers</h4>
+            <div style="display:flex;flex-direction:column;gap:12px;">
+              <div class="broker-info">
+                <div class="broker-avatar">JM</div>
+                <div><p>James Monroe — Office & Mixed-Use</p><a href="tel:+15551234501" style="color:var(--accent);font-size:0.875rem;">(555) 123-4501</a></div>
+              </div>
+              <div class="broker-info">
+                <div class="broker-avatar" style="background:#7c3aed;">PV</div>
+                <div><p>Patricia Vance — Retail</p><a href="tel:+15551234502" style="color:var(--accent);font-size:0.875rem;">(555) 123-4502</a></div>
+              </div>
+              <div class="broker-info">
+                <div class="broker-avatar" style="background:#059669;">DS</div>
+                <div><p>David Sullivan — Industrial</p><a href="tel:+15551234503" style="color:var(--accent);font-size:0.875rem;">(555) 123-4503</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form-card">
+          <h3>Send Us a Message</h3>
+          <form id="contactForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label>First Name</label>
+                <input type="text" name="firstName" placeholder="John" required />
+              </div>
+              <div class="form-group">
+                <label>Last Name</label>
+                <input type="text" name="lastName" placeholder="Smith" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Email Address</label>
+              <input type="email" name="email" placeholder="john@company.com" required />
+            </div>
+            <div class="form-group">
+              <label>Phone Number</label>
+              <input type="tel" name="phone" placeholder="(555) 000-0000" />
+            </div>
+            <div class="form-group">
+              <label>Company</label>
+              <input type="text" name="company" placeholder="Your Company Name" />
+            </div>
+            <div class="form-group">
+              <label>Property of Interest</label>
+              <input type="text" name="propertyInterest" id="propertyInterest" placeholder="Property name or type…" />
+            </div>
+            <div class="form-group">
+              <label>I Am Interested In</label>
+              <select name="intent">
+                <option>Leasing a Space</option>
+                <option>Buying a Property</option>
+                <option>Selling a Property</option>
+                <option>Investment Inquiry</option>
+                <option>General Information</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Message</label>
+              <textarea name="message" placeholder="Tell us about your space needs — size, location, timeline, budget…"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block" style="margin-top:8px;">Send Message →</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Map Placeholder -->
+  <div style="background:var(--bg-light);border-top:1px solid var(--border);padding:60px 0;text-align:center;">
+    <div class="container">
+      <div style="background:#e5e7eb;border-radius:var(--radius);height:280px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;">
+        <span style="font-size:2.5rem;">🗺️</span>
+        <h3 style="color:var(--text-light);">1200 Commerce Blvd, Suite 800, New York, NY 10001</h3>
+        <p style="color:var(--text-light);font-size:0.9rem;">Interactive map — embed your preferred map provider here</p>
+        <a href="https://maps.google.com" target="_blank" rel="noopener" class="btn btn-outline" style="margin-top:8px;">Open in Google Maps</a>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo"><span class="logo-icon">▲</span><span class="logo-text">APEX <strong>COMMERCIAL</strong></span></a>
+          <p>Premier commercial real estate brokerage since 2006.</p>
+          <div class="social-links"><a href="#" class="social">in</a><a href="#" class="social">tw</a><a href="#" class="social">fb</a></div>
+        </div>
+        <div class="footer-col"><h4>Properties</h4><ul><li><a href="properties.html">All Listings</a></li></ul></div>
+        <div class="footer-col"><h4>Company</h4><ul><li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+        <div class="footer-col"><h4>Contact</h4><address><p><a href="tel:+15551234567">(555) 123-4567</a></p><p><a href="mailto:info@apexcommercial.com">info@apexcommercial.com</a></p></address></div>
+      </div>
+      <div class="footer-bottom"><p>© 2024 Apex Commercial Realty. All rights reserved.</p></div>
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
